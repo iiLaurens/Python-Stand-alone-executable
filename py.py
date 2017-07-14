@@ -67,10 +67,12 @@ else:
    # don't automatically import with the base module.  help("modules .") lists
    # these.  Any module that isn't present with its base but can be imported
    # was then added.
-   try:
-      import xlwings
-   except:
-      pass
+
+
+#   try:
+#      import xlwings
+#   except:
+#      pass
 
    try:
       import __future__
