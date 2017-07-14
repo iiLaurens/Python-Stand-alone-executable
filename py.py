@@ -68,6 +68,11 @@ else:
    # these.  Any module that isn't present with its base but can be imported
    # was then added.
    try:
+      import xlwings
+   except:
+      pass
+
+   try:
       import __future__
    except:
       pass
@@ -1886,6 +1891,12 @@ else:
       import zlib
    except:
       pass
+
+   try:
+      import numpy
+   except:
+      pass
+
 
 def alternate_raw_input(prompt=None):
    """Write the prompt to stderr, then call raw_input without a prompt.
